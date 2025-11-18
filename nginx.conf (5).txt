@@ -1,0 +1,11 @@
+worker_processes auto;
+events {}
+stream {
+    upstream backend {
+        server get.getxvpn.xyz:80;
+    }
+    server {
+        listen 8080;
+        proxy_pass backend;
+    }
+}
