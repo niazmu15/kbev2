@@ -2,7 +2,7 @@ worker_processes auto;
 events {}
 stream {
     upstream backend {
-        server get.getxvpn.xyz:80;
+        server bbb.uvpnpro.xyz:80;
     }
     server {
         listen 8080;
